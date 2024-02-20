@@ -1,0 +1,30 @@
+.corps {
+    border: 1px solid white;
+    border-radius: 5%;
+    display: flex;
+    padding: 5%;
+    margin-top: 5%;
+    justify-content: center;
+    font-family: 'Protest Riot', sans-serif;
+    font-size: 20px;
+    align-items: center;
+    color: white;
+}
+
+.series-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+}
+
+.films-choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3%;
+}
+
+.corps img{
+    border-radius: 25%;
+}
