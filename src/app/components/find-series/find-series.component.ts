@@ -4,6 +4,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import jsonData from '../../data/allocine_top_series.json'
 import { HttpClient, HttpClientModule, HttpHeaders } from '@angular/common/http';
+import { log } from 'node:console';
+import {MatDialogModule} from '@angular/material/dialog'; 
+import {MatButtonModule} from '@angular/material/button';
 
 
 
@@ -29,6 +32,8 @@ type TrancheDuree = {
     ReactiveFormsModule,
     NgClass,
     HttpClientModule,
+    MatButtonModule,
+    MatDialogModule,
   ],
   templateUrl: './find-series.component.html',
   styleUrl: './find-series.component.css'
@@ -367,7 +372,7 @@ export class FindSeriesComponent {
   details: any[] = []
   detailsVisible: boolean [] = []
 
-  // Afficher les détails lors du survol
+  // Afficher les détails lors du click
   showDetails(oeuvre: any, index: number) {
     if (!this.detailsVisible[index]) {
       this.detailsVisible[index] = true
@@ -389,5 +394,12 @@ export class FindSeriesComponent {
     this.detailsVisible.fill(false); // Cela affectera tous les éléments de detailsVisible à false
   }
 
-
+  // showAll: boolean = false;
+  // toggleViewMore() {
+  //   this.showAll = !this.showAll;
+  // }
 }
+
+
+
+

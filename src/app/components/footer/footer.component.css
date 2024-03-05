@@ -8,9 +8,14 @@ footer{
     padding: 0 20px;
 }
 
-#footer-contact ul li {
-    list-style-type: none;
-    display: flex;
+#footer-copyright p {
+    color: gray;
+    font-size: 10px;
+}
+
+#footer-copyright a:hover {
+    color: #FFC800;
+    box-shadow: 0 7px 20px #FFC800;
 }
 
 #footer-copyright{

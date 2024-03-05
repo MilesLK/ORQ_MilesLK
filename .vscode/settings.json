@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./orq_api_auth/watchlist"
+    ]
+}

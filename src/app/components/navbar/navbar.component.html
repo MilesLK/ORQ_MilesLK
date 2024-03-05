@@ -8,11 +8,12 @@
             <li><a class="dropdown-item" routerLink="/findSeries">Trouver une série</a></li>
         </ul>
     </li>
-
+    
     <div id="nav-logo">
         <a routerLink="/"><img src="../assets/image/logo_white.png" alt="logo" height="200px"></a>
     </div>
-
+    
+    
     <li class="nav-item dropdown d-flex align-content-center">
         <a class="nav-link custom-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Mon profil
@@ -22,5 +23,6 @@
             <li><a class="dropdown-item" routerLink="/inscription">Inscription</a></li>
         </ul>
     </li>
-    <button (click)="onLogout()">Déconnexion</button>
+    
+        <button (click)="onLogout()" class="log_out"><i class="fa-solid fa-power-off"></i></button>
 </nav>

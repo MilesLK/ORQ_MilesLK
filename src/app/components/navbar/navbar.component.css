@@ -36,3 +36,18 @@ a:hover {
 .dropdown-item {
     color: black;
 }
+
+.log_out{
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 40%;
+    font-size: 10px;
+    margin: 10px;
+}
+
+.log_out:hover{
+    background: #FFC800;
+    color: black;
+    box-shadow: 0 7px 20px #FFC800;
+}
